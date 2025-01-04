@@ -1,9 +1,10 @@
 {
 	"name": "kaba-hl",
 	"license": "MIT",
-	"displayName": "Kaba Syntax Highlighter",
+	"displayName": "Kaba Programming Language (dev) Syntax Highlighter",
 	"description": "Syntax highlighter for Kaba (.kaba) files",
 	"version": "0.0.1",
+	"publisher": "snaztoz",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/snaztoz/kaba-hl.git"
