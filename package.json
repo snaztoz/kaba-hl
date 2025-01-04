@@ -1,0 +1,38 @@
+{
+	"name": "kaba-hl",
+	"license": "MIT",
+	"displayName": "Kaba Syntax Highlighter",
+	"description": "Syntax highlighter for Kaba (.kaba) files",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.96.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "kaba",
+				"aliases": [
+					"Kaba",
+					"kaba"
+				],
+				"extensions": [
+					".kaba"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "kaba",
+				"scopeName": "source.kaba",
+				"path": "./syntaxes/kaba.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"size": 6857
+	}
+}

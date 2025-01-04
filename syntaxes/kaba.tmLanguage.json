@@ -1,0 +1,90 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Kaba",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#char"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.kaba",
+				"match": "//.*"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.kaba",
+				"match": "\\b(var|if|else|while|each|break|continue|in|fn|return|as|debug)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.kaba",
+					"match": "[0-9]+(.[0-9]+)?"
+				},
+				{
+					"name": "constant.language.kaba",
+					"match": "\\b(true|false)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [{
+				"name": "storage.type.kaba",
+				"match": "\\b(void|bool|sbyte|short|int|long|float|double|char|string)\\b"
+			}]
+		},
+		"char": {
+			"name": "string.quoted.single.kaba",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.kaba",
+					"match": "\\\\([nrtbfv\"'\\\\]|x[0-9A-Fa-f]{2})"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.kaba",
+			"begin": "\"",
+			"beginCaptures": {
+				"0": {
+				"name": "punctuation.definition.string.begin"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+				"name": "punctuation.definition.string.end"
+				}
+			},
+			"contentName": "string.content",
+			"patterns": [
+				{
+				"name": "constant.character.escape",
+				"match": "\\\\([nrtbfv\"'\\\\]|x[0-9A-Fa-f]{2})"
+				}
+			]
+		}
+	},
+	"scopeName": "source.kaba"
+}
