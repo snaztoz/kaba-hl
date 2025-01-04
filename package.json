@@ -4,6 +4,10 @@
 	"displayName": "Kaba Syntax Highlighter",
 	"description": "Syntax highlighter for Kaba (.kaba) files",
 	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/snaztoz/kaba-hl.git"
+	},
 	"engines": {
 		"vscode": "^1.96.0"
 	},
