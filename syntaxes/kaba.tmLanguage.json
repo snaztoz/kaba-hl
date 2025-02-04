@@ -31,7 +31,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.kaba",
-				"match": "\\b(var|if|else|while|each|break|continue|in|fn|return|as|debug)\\b"
+				"match": "\\b(var|if|else|while|each|break|continue|in|def|record|return|as|debug)\\b"
 			}]
 		},
 		"constants": {

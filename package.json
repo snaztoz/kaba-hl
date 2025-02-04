@@ -3,7 +3,7 @@
 	"license": "MIT",
 	"displayName": "Kaba Programming Language (dev) Syntax Highlighter",
 	"description": "Syntax highlighter for Kaba (.kaba) files",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "snaztoz",
 	"repository": {
 		"type": "git",
